@@ -20,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
     SpringAnimation yAnimation;
 
     ImageView movingView;
-    ImageView movingView2;
     float dX = 0f;
     float dY = 0f;
 
@@ -29,7 +28,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         movingView = (ImageView)findViewById(R.id.imageButton);
-        movingView2 = (ImageView)findViewById(R.id.imageButton);
 
         movingView.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
             @Override
